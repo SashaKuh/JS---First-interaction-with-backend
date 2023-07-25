@@ -7,14 +7,16 @@ const elements = {
 };
 
 const createMarkupCatInfo = (cat) => `
-  <div class="thumb-pic">
-    <img src="${cat.url}" alt="${cat.id}" height="350" />
-  </div>
-  <div class="thumb">
-    <h1>${cat.breeds[0].name}</h1>
-    <p><b>Description:</b> ${cat.breeds[0].description}</p>
-    <p><b>Temperament:</b> ${cat.breeds[0].temperament}</p>
-  </div>`;
+<div class="container">
+    <div class="thumb-pic">
+        <img src="${cat.url}" alt="${cat.id}" height="350" />
+    </div>
+    <div class="thumb">
+        <h1>${cat.breeds[0].name}</h1>
+        <p><b>Description:</b> ${cat.breeds[0].description}</p>
+        <p><b>Temperament:</b> ${cat.breeds[0].temperament}</p>
+    </div>
+</div>`;
 
 const handleBreedSelectChange = (evt) => {
   evt.preventDefault();
